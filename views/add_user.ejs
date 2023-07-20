@@ -1,0 +1,52 @@
+<%- include('header') %>
+
+
+
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center" >Add New User</h5>
+            <form action="/add" method="post" enctype="multipart/form-data">
+              <!-- Name input -->
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+
+              <!-- Phone input -->
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+              </div>
+
+              <!-- Select image input -->
+              <div class="form-group mt-1">
+                <label for="image">Select Image</label>
+                <div class="custom-file">
+                  <input type="file" class="form-control" id="image" name="image">
+                  <!-- <label class="custom-file-label" for="image">Choose file</label> -->
+                </div>
+              </div>
+
+              <!-- Add User button -->
+              <button type="submit" class="btn btn-primary btn-block form-control mt-3">Add User</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<%- include('footer') %>
